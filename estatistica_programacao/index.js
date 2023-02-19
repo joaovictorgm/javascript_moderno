@@ -60,10 +60,10 @@ console.log(`Mediana: ${median(15, 14, 8, 7, 3)}`)
 const mode = (...numbers) => {
     const quantities = numbers.map(num => [
         num,
-        numbers.filter(n => num === n).length
+        numbers.filter(n => num === n).length// essa função usa o método 'map' para criar um novo array 'quantities', que contém pares de números e quantidades. Cada par é representado por um array de duas posições, onde a primeira posição é o próprio número e a segunda posição é a quantidade de vezes que esse número aparece no arry original. Para obter a quantidade, a função usa o método 'filter' em 'numbers' para criar um novo array contendo apenas os elementos iguais ao número atual e, em seguida, retorna o comprimento desse novo array
     ])
-    quantities.sort((a, b) => b[1] - a[1])
-    return quantities[0][0]
+    quantities.sort((a, b) => b[1] - a[1])//Após obter o array 'quantities, a função o ordena em ordem decrescente de acordo com a quantidade usando o método 'sort', que recebe a função de comparação que compara o segundo elemento de cada par(ou seja, a quantidade)
+    return quantities[0][0]// á função retorna o primeiro elemento do primeiro par do array     'quantities', que corresponde ao número com a maior quantidade e, portanto, à moda
 }
 
 console.log(`Moda: ${mode(1, 1, 99, 5, 4, 9, 4, 2,4 )}`)
