@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "hello-world-npm": "^1.1.1"
+  },
+  "name": "javascript_moderno",
+  "description": "repositório com os conhecimentos sobre javascript moderno",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "hello":"hello-world-npm",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaovictorgm/javascript_moderno.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaovictorgm/javascript_moderno/issues"
+  },
+  "homepage": "https://github.com/joaovictorgm/javascript_moderno#readme",
+  "keywords": []
+}
